@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSTRES ESTERLINA</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="menu-container">
+    <input type="checkbox" aria-label="Toggle menu" />
+    <span></span>
+    <span></span>
+    <span></span>
+  
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="../index.html">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="nosotros.html">
+            Nosotros
+          </a>
+        </li>
+        <li>
+          <a href="productos.html">
+            Productos
+          </a>
+        </li>
+        <li>
+          <a href="fotos.html">
+            Fotos
+          </a>
+        </li>
+        <li>
+          <a href="contacto.html">
+            Contacto
+          </a>
+        </li>
+      </ul>
+      <ul>
+      </ul>
+    </div>
+  </nav>
+    <header><h1 style="font-size: 60px; margin-top: 80px;">Contactanos</h1></header>
+   
+
+    <main>
+        <div id="container">
+            <form action="#" method="post" id="contact_form">
+              <div class="name">
+                <label for="name"></label>
+                <input type="text" placeholder="Mi nombre es" name="name" id="name_input" required>
+              </div>
+              <div class="email">
+                <label for="email"></label>
+                <input type="email" placeholder="Mi Email es" name="email" id="email_input" required>
+              </div>
+              <div class="telephone">
+                <label for="name"></label>
+                <input type="text" placeholder="mi teléfono es" name="telephone" id="telephone_input" required>
+              </div>
+              <div class="subject">
+                <label for="subject"></label>
+                <select placeholder="Subject line" name="subject" id="subject_input" required>
+                  <option disabled hidden selected>Me gustaría</option>
+                  <option> Me gustaría hacer una consulta</option>
+                  <option> Me gustaría hacer un pedido</option>
+                </select>
+              </div>
+              <div class="message">
+                <label for="message"></label>
+                <textarea name="message" placeholder="Escriba su pedido o consulta" id="message_input" cols="30" rows="5" required></textarea>
+              </div>
+              <div class="submit">
+                <input type="button" value="Enviar" id="form_button">
+              </div>
+            </form>
+          </div>
+    </main>
+
+    <hr>
+    <footer>
+        Postres Esterlina™ Todos los derechos reservados. 
+        <br>
+        postresesterlina@gmail.com
+    </footer>
+</body>
+</html>
