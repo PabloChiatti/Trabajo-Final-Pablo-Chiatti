@@ -4,7 +4,18 @@
     text-align: center;
     
 }
-
+#galeria img:hover{
+  border: 5px solid #f8ede2
+}
+h1{
+ color: #000000;
+}
+h2{
+  color: #000000;
+}
+h3{
+  color: #000000;
+}
 
 .menu-container {
   position: relative;
@@ -27,7 +38,7 @@
 }
 
 .menu-container a:hover {
-  color: #000404;
+  color: #000000;
 }
 
 .menu-container input {
@@ -155,7 +166,8 @@
 }
 
  #boton:hover{
-     color: black;
+  transition: color 0.3s ease;
+     color: #000000;
  }
 header{
     font-family: 'Yeseva One', cursive;
@@ -168,9 +180,9 @@ header{
 
 
 body{
-    background-image: url(imagenes/fondo.jpeg);
+    background-image: url(imagenes/fondo\ pablo\ 2.svg);
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -321,7 +333,7 @@ height: 600px;
           }
           
           button, input, select, textarea {
-            color: black;
+            color: #000000;
             font: inherit;
             margin: 0;
           }
@@ -335,7 +347,7 @@ height: 600px;
           }
           
           #container {
-            border: solid 3px black;
+            border: solid 3px #000000;
             max-width: 768px;
             margin: 60px auto;
             position: relative;
@@ -349,7 +361,7 @@ height: 600px;
           
           
           .underline {
-            border-bottom: solid 2px black;
+            border-bottom: solid 2px #000000;
             margin: -0.512em auto;
             width: 80px;
           }
@@ -366,8 +378,8 @@ height: 600px;
           input[type='text'], [type='email'], select, textarea {
               background: none;
             border: none;
-              border-bottom: solid 2px black;
-              color: black;
+              border-bottom: solid 2px #000000;
+              color: #000000;
               font-size: 1.000em;
             font-weight: 400;
             letter-spacing: 1px;
@@ -428,27 +440,27 @@ height: 600px;
           }
           
           ::-webkit-input-placeholder {
-              color: black;
+              color: #000000;
           }
           
           :-moz-placeholder { 
-              color: black;
+              color: #000000;
               opacity: 1;
           }
           
           ::-moz-placeholder {
-              color: black;
+              color: #000000;
               opacity: 1;
           }
           
           :-ms-input-placeholder {
-              color: black;
+              color: #000000;
           }
           
           #form_button {
             background: none;
-            border: solid 2px black;
-            color: black;
+            border: solid 2px #000000;
+            color: #000000;
             cursor: pointer;
             display: inline-block;
             font-size: 0.875em;
@@ -464,7 +476,7 @@ height: 600px;
           }
           
           #form_button:hover {
-            background: black;
+            background: #000000;
             color: #F2F3EB;
           }
           
