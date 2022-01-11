@@ -17,154 +17,6 @@ h3{
   color: #000000;
 }
 
-.menu-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  background: #f9ad06;
-  color: #f8ede2;
-  padding: 20px;
-  z-index: 1;
-  -webkit-user-select: none;
-  user-select: none;
-  box-sizing: border-box;
-}
-
-.menu-container a {
-  text-decoration: none;
-  color: #f9ad06;
-  transition: color 0.3s ease;
-}
-
-.menu-container a:hover {
-  color: #000000;
-}
-
-.menu-container input {
-  display: block;
-  width: 35px;
-  height: 25px;
-  margin: 0;
-  position: absolute;
-  cursor: pointer;
-  opacity: 0; 
-  z-index: 2; 
-  -webkit-touch-callout: none;
-}
-
-
-.menu-container span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #f8ede2;
-  border-radius: 3px;
-  z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-.menu-container span:first-child {
-  transform-origin: 0% 0%;
-}
-
-.menu-container span:nth-child(3) {
-  transform-origin: 0% 100%;
-}
-
-.menu-container input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(3px,-1px);
-  background: #f9ad06;
-}
-
-.menu-container input:checked ~ span:nth-child(4) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-.menu-container input:checked ~ span:nth-child(3) {
-  transform: rotate(-45deg) translate(-5px,11px);
-}
-
-.menu ul {
-  list-style: none;
-}
-
-.menu li {
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-
-@media only screen and (max-width: 767px) { 
-  .menu-container {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  
-  .menu {
-    position: absolute;
-    box-sizing: border-box;
-    width: 300px;
-    right: -300px;
-    top: 0;
-    margin: -20px;
-    padding: 75px 50px 50px;
-    background: #f8ede2;
-    -webkit-font-smoothing: antialiased;
-  
-    transform-origin: 0% 0%;
-    transform: translateX(0%);
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  }
-
-  .menu-container input:checked ~ .menu {
-    transform: translateX(-100%);
-  }
-}
-
-
-@media only screen and (min-width: 768px) { 
-  .menu-container {
-    width: 100%;
-  }
-
-  .menu-container a {
-    color: #f8ede2;
-  }
-
-  .menu-container input {
-    display: none;
-  }
-
-  
-  .menu-container span {
-    display: none;
-  }
-
-  .menu {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .menu ul {
-    display: flex;
-    padding: 0;
-  }
-
-  .menu li {
-    padding: 0 20px;
-  }
-}
-
  #boton:hover{
   transition: color 0.3s ease;
      color: #000000;
@@ -177,15 +29,27 @@ header{
 
 }
 
-
-
 body{
-    background-image: url(imagenes/fondo\ pablo\ 2.svg);
+    background-image: url(imagenes/blob-scene-haikei\ \(1\).svg);
     background-position: center;
     background-size:cover;
     font-family: 'Varela Round', sans-serif;
 }
 
+.navbar{
+  background-color:#f9ad06 ;
+ 
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color:#f8ede2 ;
+  font-size: large;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+
+  transition: color 0.3s ease;
+     color: #000000;
+}
 #boton{
     margin: 30px;
     text-decoration: none;
@@ -203,9 +67,7 @@ body{
     
 
 }
-footer{
-    background-color:#f8ede2 ;
-}
+
 
 .parent {
 display: grid;
@@ -679,3 +541,51 @@ height: 600px;
               font-size: 0.875em;
             }
           }
+  .carousel-control-next-icon, .carousel-control-prev-icon{
+   background-color: #000000;
+   border-radius: 20px;
+   height: 30px;
+   padding: 10px;
+ }
+
+ .jumbotron{
+  margin-top: -20px;
+  background-color: #f9ad06;
+  font-family:'Yeseva One', cursive ;
+  background-image: url(imagenes/cabecera-obrador.jpg);
+  background-position: center;
+   background-size: cover;
+ }
+
+ .redes{
+
+   font-size: xx-large;
+ }
+ .redes .fab{
+   margin-left: 20px;
+   margin-right: 20px;
+   color: #000000;
+   
+   border-radius: 50%;
+   cursor: pointer;
+   transition: all 0.3s ease;
+ }
+ .redes .fas{
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #000000;
+  border-radius: 50%;
+ 
+   border-radius: 50%;
+   transition: all 0.3s ease;
+}
+
+.redes .icon1:hover{
+background-color: greenyellow;
+}
+.redes .icon2:hover{
+  background-color: #c13584;
+}
+.redes .icon3:hover{
+  background-color: red;
+}
