@@ -1,10 +1,19 @@
-
-$negro:#000000;
-$naranja:#f9ad06;
-$blanco:#f8ede2;
+$colors: (
+"negro":#000000,
+"naranja":#f9ad06,
+"blanco":#f8ede2,
+);
 
 $fuente1:'Yeseva One', cursive;
 $fuente2:'Varela Round', sans-serif;
+
+@mixin sizes ($width, $height){
+  height: $height;
+  width: $width;
+
+}
+
+  
 
 
 
@@ -19,18 +28,18 @@ $fuente2:'Varela Round', sans-serif;
   border: 5px solid $blanco
 }
 h1{
- color: $negro;
+ color: map-get($map: $colors, $key: "negro")
 }
 h2{
-  color: $negro;
+  @extend h1;
 }
 h3{
-  color: $negro;
+  @extend h2;
 }
 
  #boton:hover{
   transition: color 0.3s ease;
-     color: $negro;
+     color: map-get($map: $colors, $key: "negro")
  }
 header{
     font-family: $fuente1;
@@ -43,7 +52,7 @@ header{
 body{
     background-image: url(imagenes/blob-scene-haikei\ \(1\).svg);
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     font-family: $fuente2;
 }
 
@@ -69,8 +78,7 @@ body{
     border: none;
     display: inline-block;
     font-size: 20px;
-    height: 40px;
-    width: 40%;
+   @include sizes(40px, 20% );
     font-family: $fuente2;
     color: $blanco;
     font-weight: 900 !important;
@@ -592,11 +600,11 @@ height: 600px;
 }
 
 .redes .icon1:hover{
-background-color: greenyellow;
+background-color: #adff2f;
 }
 .redes .icon2:hover{
   background-color: #c13584;
 }
 .redes .icon3:hover{
-  background-color: red;
+  background-color: #ff0000;
 }
