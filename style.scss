@@ -1,21 +1,17 @@
-$colors: (
-"negro":#000000,
-"naranja":#f9ad06,
-"blanco":#f8ede2,
-);
 
-$fuente1:'Yeseva One', cursive;
-$fuente2:'Varela Round', sans-serif;
+$negro:#000000;
+$naranja: #f9ad06;
+$blanco: #f8ede2;
+
+
+$fuente1: 'Yeseva One', cursive;
+$fuente2: 'Varela Round', sans-serif;
 
 @mixin sizes ($width, $height){
   height: $height;
   width: $width;
 
 }
-
-  
-
-
 
 *{
     margin: 0%;
@@ -24,11 +20,8 @@ $fuente2:'Varela Round', sans-serif;
     
 }
 
-#galeria img:hover{
-  border: 5px solid $blanco
-}
 h1{
- color: map-get($map: $colors, $key: "negro")
+ color: $negro;
 }
 h2{
   @extend h1;
@@ -39,7 +32,7 @@ h3{
 
  #boton:hover{
   transition: color 0.3s ease;
-     color: map-get($map: $colors, $key: "negro")
+     color: $negro;
  }
 header{
     font-family: $fuente1;
@@ -50,14 +43,15 @@ header{
 }
 
 body{
-    background-image: url(imagenes/blob-scene-haikei\ \(1\).svg);
+
     background-position: center;
     background-size: cover;
     font-family: $fuente2;
+    background-image: url(imagenes/fondo1.svg);
 }
 
 .navbar{
-  background-color:$naranja ;
+  background-color: $naranja;
  
 }
 
@@ -78,10 +72,11 @@ body{
     border: none;
     display: inline-block;
     font-size: 20px;
-   @include sizes(40px, 20% );
+   @include sizes(400px, 50px );
     font-family: $fuente2;
     color: $blanco;
     font-weight: 900 !important;
+    
     
     
 
@@ -548,8 +543,7 @@ height: 600px;
             }
             
             .icon {
-              height: 35px;
-              width: 35px;
+              @include sizes(35px, 35px)
             }
             
             .underline {
@@ -579,32 +573,37 @@ height: 600px;
  .redes{
 
    font-size: xx-large;
- }
- .redes .fab{
-   margin-left: 20px;
-   margin-right: 20px;
-   color: $negro;
-   
-   border-radius: 50%;
-   cursor: pointer;
-   transition: all 0.3s ease;
- }
- .redes .fas{
-  margin-left: 20px;
-  margin-right: 20px;
-  color: $negro;
-  border-radius: 50%;
- 
-   border-radius: 50%;
-   transition: all 0.3s ease;
-}
+   .fab{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: $negro;
+    
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+     }
 
-.redes .icon1:hover{
-background-color: #adff2f;
-}
-.redes .icon2:hover{
-  background-color: #c13584;
-}
-.redes .icon3:hover{
-  background-color: #ff0000;
-}
+    .fas{
+      margin-left: 20px;
+      margin-right: 20px;
+      color: $negro;
+      border-radius: 50%;
+     
+       border-radius: 50%;
+       transition: all 0.3s ease;
+      }
+      .icon1:hover{
+        background-color: #adff2f;
+        }
+
+        .icon2:hover{
+          background-color: #c13584;
+        }
+        .icon3:hover{
+          background-color: #ff0000;
+        }
+  
+ }
+
+  
+
